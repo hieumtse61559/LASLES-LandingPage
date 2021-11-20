@@ -1,0 +1,38 @@
+.sub__about{
+  padding-left: 174px;
+  margin-bottom: 90px;
+  .sub-list{
+    width: 1140px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 340px 430px 370px;
+    border-radius: 10px;
+    padding: 31px 0px 44px;
+    box-shadow: 0px 0px 30px red;
+    .sub-item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 37px;
+      .content-item{
+        font-style: normal;
+        width: 53px;
+        height: 65px;
+        div{
+          @include styleText($black-bold, 25px, 700);
+          line-height: 30px;
+          
+        }
+        p{
+          @include styleText($black-light, 20px, 400);
+          line-height: 30px;
+        }
+      }
+    }
+    .locations{
+      border-left: 4px solid #EEEFF2;
+      border-right: 4px solid #EEEFF2;
+    }
+  }
+  
+}

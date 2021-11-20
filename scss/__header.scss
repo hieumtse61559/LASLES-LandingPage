@@ -1,0 +1,41 @@
+@import "_mixin";
+@import "_variables";
+.header{
+  display: flex;
+  align-items: center;
+  column-gap: 150px;
+  margin-bottom: 88px;
+  padding: 46px 150px 0px;
+  .logo__container{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .nav__container{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    a{
+      @include styleText($black-light, 16px, 400);
+      
+    }
+  }
+
+  .button__container{
+    *{
+      background-color: transparent;
+      @include styleText($black-bold, 16px, 500);
+    }
+    :nth-child(1){
+      border: none;
+      padding-right: 30px;
+    }
+    :nth-child(2){
+      border: 1px solid $red-secondary ;
+      padding: 13px 45px;
+      color:  $red-secondary;
+      border-radius: 50px;
+    }
+  }
+}
